@@ -132,3 +132,8 @@ with col_left:
                     else:
                         st.session_state.game_over = True
                         st.rerun()
+# Thêm phần phát nhạc nền vào giao diện
+st.sidebar.title("🎵 Âm nhạc trò chơi")
+
+# Nếu bạn tải file nhạc lên GitHub cùng thư mục với tên 'nhac_nen.mp3':
+st.sidebar.audio("nhac_nen.mp3", format="audio/mp3", loop=True)
